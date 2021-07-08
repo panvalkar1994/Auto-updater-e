@@ -1,0 +1,32 @@
+{
+  "name": "auto-updater",
+  "version": "1.0.0",
+  "description": "test auto updater for electron app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panvalkar1994/Auto-updater-e.git"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "vaibhav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/panvalkar1994/Auto-updater-e/issues"
+  },
+  "homepage": "https://github.com/panvalkar1994/Auto-updater-e#readme",
+  "devDependencies": {
+    "electron": "^13.1.6",
+    "electron-builder": "^22.11.7"
+  },
+  "dependencies": {
+    "electron-updater": "^4.3.9"
+  }
+}
