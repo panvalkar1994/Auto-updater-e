@@ -1,6 +1,6 @@
 {
   "name": "auto-updater",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "test auto updater for electron app",
   "main": "main.js",
   "scripts": {
