@@ -30,9 +30,9 @@ app.on('window-all-closed', function () {
  * Auto updater
  */
 https://github.com/panvalkar1994/Auto-updater-e/releases/download/v1.0.1/auto-updater-Setup-1.0.1.exe
-// const server = 'https://github.com/panvalkar1994/Auto-updater-e'
-// const url = `${server}/update/${process.platform}/${app.getVersion()}`
-const url = `https://github.com/panvalkar1994/Auto-updater-e/releases/download/${app.getVersion()}`
+const server = 'https://github.com/panvalkar1994/Auto-updater-e'
+const url = `${server}/releases/download/${app.getVersion()}`
+// const url = `https://github.com/panvalkar1994/Auto-updater-e/releases/download/${app.getVersion()}`
 autoUpdater.setFeedURL({ url })
  
 setInterval(() => {
