@@ -36,7 +36,8 @@ const url = `https://github.com/panvalkar1994/Auto-updater-e/releases/download/$
 autoUpdater.setFeedURL({ url })
  
 setInterval(() => {
-  autoUpdater.checkForUpdates()
+  autoUpdater.checkForUpdates();
+  console.log('checking...')
 }, 60000)
 
 autoUpdater.on('update-downloaded', (event, releaseNotes, releaseName) => {
