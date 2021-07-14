@@ -1,6 +1,6 @@
 {
   "name": "auto-updater",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "test auto updater for electron app",
   "main": "main.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "start": "electron .",
     "build": "electron-builder build --win --publish never",
     "deploy": "electron-builder build --win --publish always",
-    "linux-system-deploy":"sh ./setup.sh && npm run build"
+    "linux-system-deploy":"sh ./setup.sh && npm run build",
+    "all":"electron-builder -mwl"
   },
   "repository": {
     "type": "git",
